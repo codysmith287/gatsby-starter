@@ -1,3 +1,5 @@
+// @flow
+
 import React from "react"
 import { Link } from "gatsby"
 
@@ -14,7 +16,12 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <div>
+      <Link to="/page-2/" style={{ marginRight: `1.45rem` }}>
+        Go to page 2
+      </Link>
+      <Link to="/emotion-example/">Emotion CSS Example page</Link>
+    </div>
   </Layout>
 )
 
